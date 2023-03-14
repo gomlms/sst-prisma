@@ -109,7 +109,7 @@ export class PrismaLayer extends LayerVersion {
     bundleCommandHash.update(JSON.stringify(createBundleCommand));
 
     // bundle
-    let code = Code.fromAsset('.', {
+    const code = Code.fromAsset('.', {
       // don't send all our files to docker (slow)
       ignoreMode: IgnoreMode.GLOB,
       exclude: ['*'],

@@ -24,7 +24,7 @@ export function Layers({ stack, app }: StackContext) {
   app.addDefaultFunctionLayers([prismaLayer]);
   app.addDefaultFunctionEnv(prismaLayer.environment);
   app.setDefaultFunctionProps({
-    copyFiles: [{ from: 'backend/prisma/schema.prisma', to: 'src/schema.prisma' }],
+    copyFiles: [{ from: 'backend/prisma/schema.prisma', to: 'backend/src/schema.prisma' }],
     nodejs: {
       format: 'esm',
       esbuild: {

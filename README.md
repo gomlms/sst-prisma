@@ -22,6 +22,9 @@ pnpm i  # install dependencies + generate types from DB and GQL schemas
 pnpm dev  # start local dev server
 ```
 
+### Local Prisma Development
+Replace "INSERT_PATH_TO_PRISMA_FOLDER" with the your prisma directory (i.e. /Users/user/Documents/sst-prisma/backend/prisma)
+
 ## Features
 
 All features are optional, delete what you don't need.
